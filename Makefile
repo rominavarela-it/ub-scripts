@@ -37,5 +37,22 @@ all:
 	echo "qbittorrent" >> installed.txt
 
 vm:
+	#repos	
+	sudo add-apt-repository ppa:webupd8team/atom
+	sudo add-apt-repository ppa:webupd8team/java
+	#
+	sudo apt-get -y update
+	sudo apt-get -y upgrade
+	#apps
+	sudo apt-get install -y atom
+	echo "atom" >> installed.txt
+	sudo apt-get install -y ubuntu-restricted-extras
+	echo "ubuntu-restricted-extras" >> installed.txt
+	sudo apt-get install -y oracle-java8-installer
+	echo "java8" >> installed.txt
+	sudo apt-get install -y git
+	echo "git" >> installed.txt
+	sudo apt-get install -y ipython
+	echo "ipython" >> installed.txt
 	sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 	echo "virtual box plugins" >> installed.txt
