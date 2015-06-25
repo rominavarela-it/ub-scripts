@@ -33,5 +33,9 @@ all:
 	echo "maven2" >> installed.txt
 	sudo apt-get install -y kolourpaint4
 	echo "kolourpaint4" >> installed.txt
-	sudo apt-get install qbittorrent
+	sudo apt-get install -y qbittorrent
 	echo "qbittorrent" >> installed.txt
+
+vm:
+	sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+	echo "virtual box plugins" >> installed.txt
