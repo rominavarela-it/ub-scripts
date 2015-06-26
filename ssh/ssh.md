@@ -12,4 +12,13 @@
 
 **3. For each node, associate node-name to ip**
 
- > sudo nano /etc/hosts
+ > nano ~/.ssh/config
+ 
+Example:
+ 
+    Host romina1-VirtualBox
+
+        Hostname 10.0.1.101
+ 
+        User romina1
+
