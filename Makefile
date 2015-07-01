@@ -52,6 +52,8 @@ vm:
 	echo "ubuntu-restricted-extras" >> installed.txt
 	sudo apt-get install -y oracle-java8-installer
 	echo "java8" >> installed.txt
+	sudo apt-get install -y openjdk-7-jdk
+	echo "jdk7" >> installed.txt
 	sudo apt-get install -y git
 	echo "git" >> installed.txt
 	sudo apt-get install -y ipython
