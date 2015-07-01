@@ -39,15 +39,12 @@ all:
 	echo "qbittorrent" >> installed.txt
 
 vm:
-	#repos	
-	sudo add-apt-repository ppa:webupd8team/atom
+	#repos
 	sudo add-apt-repository ppa:webupd8team/java
 	#
 	sudo apt-get -y update
 	sudo apt-get -y upgrade
 	#apps
-	sudo apt-get install -y atom
-	echo "atom" >> installed.txt
 	sudo apt-get install -y ubuntu-restricted-extras
 	echo "ubuntu-restricted-extras" >> installed.txt
 	sudo apt-get install -y oracle-java8-installer
