@@ -1,52 +1,57 @@
-## create a mirror folder that will have the same route in every node
+**create a mirror folder that will have the same route in every node**
 
-sudo mkdir /mirror
+ > sudo mkdir /mirror
 
-sudo mkdir /mirror/romina
+ > sudo mkdir /mirror/romina
 
-sudo chmod 007 /mirror/romina
+ > sudo chmod 007 /mirror/romina
 
-mkdir /mirror/romina/mpich
+ > mkdir /mirror/romina/mpich
 
-cd /mirror/romina/mpich
+ > cd /mirror/romina/mpich
 
-## get mpich
+**get mpich**
 
-wget http://www.mpich.org/static/downloads/3.1.4/mpich-3.1.4.tar.gz
+ > wget http://www.mpich.org/static/downloads/3.1.4/mpich-3.1.4.tar.gz
 
-# Install Guide
-## step 1 - unpack
+### Install Guide
 
-tar xfz mpich-3.1.4.tar.gz
+*https://www.mpich.org/static/downloads/3.1.4/mpich-3.1.4-installguide.pdf*
 
-## step 2 - choose a installation directory
+**step 1 - unpack**
 
-mkdir mpich-install
+ > tar xfz mpich-3.1.4.tar.gz
 
-## step 3 - choose a build directory
-mkdir mpich-build
+**step 2 - choose a installation directory**
 
-## step 4,5 - 
-## configure mpich specifying installation dir 
-## and running config script
+ > mkdir mpich-install
 
-cd mpich-build
+**step 3 - choose a build directory**
+ > mkdir mpich-build
 
-/mirror/romina/mpich/mpich-3.1.4/configure -prefix=/mirror/romina/mpich/mpich-install --with-pm=hydra --with-java=/usr/lib/jvm/java-7-openjdk-amd64 --disable-fortran
+**step 4,5 - configure mpich specifying installation dir and running config script**
 
-## step 6 - build
+ > cd mpich-build
 
-make
+ > /mirror/romina/mpich/mpich-3.1.4/configure -prefix=/mirror/romina/mpich/mpich-install --with-pm=hydra --with-java=/usr/lib/jvm/java-7-openjdk-amd64 --disable-fortran
 
-## step 7 - install
+**step 6 - build**
 
-make install
+ > make
 
-## step 8 - add bin installation directory to path
+**step 7 - install**
 
-export PATH=/mirror/romina/mpich/mpich-install/bin:$PATH
+ > make install
 
-### test installation
+**step 8 - add bin installation directory to path**
 
-which mpiexec
+ > nano ~/.bashrc
+
+    Write at the end of file:
+    
+    export PATH=/mirror/romina/mpich/mpich-install/bin:$PATH
+
+###Test installation
+
+ > which mpiexec
 
