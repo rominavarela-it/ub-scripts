@@ -1,7 +1,7 @@
 # ub-scripts
 Scripts for ubuntu
 
-Clone this repository and run
+Clone this repository and run:
 
  > make
  
