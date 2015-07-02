@@ -12,9 +12,15 @@
 
 **3. For each node, associate node-name to ip**
 
+ > nano /etc/hosts
+
+Example hosts:
+
+    10.0.1.101	romina1-VirtualBox
+
  > nano ~/.ssh/config
  
-Example:
+Example config:
  
     Host romina1-VirtualBox
 
