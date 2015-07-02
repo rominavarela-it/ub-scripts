@@ -44,7 +44,7 @@ make install
 
 ## step 8 - add bin installation directory to path
 
-export PATH=/mirror/romina/mpich/mpich-install/bin:/mirror/romina/mpich/mpich-install/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=/mirror/romina/mpich/mpich-install/bin:$PATH
 
 ### test installation
 
