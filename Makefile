@@ -51,6 +51,8 @@ vm:
 	echo "java8" >> installed.txt
 	sudo apt-get install -y openjdk-7-jdk
 	echo "jdk7" >> installed.txt
+	sudo apt-get install -y g++
+	echo "g++" >> installed.txt
 	sudo apt-get install -y git
 	echo "git" >> installed.txt
 	sudo apt-get install -y ipython
