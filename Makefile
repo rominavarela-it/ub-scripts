@@ -15,8 +15,8 @@ all:
 	echo "ubuntu-restricted-extras" >> installed.txt
 	sudo apt-get install -y oracle-java8-installer
 	echo "java8" >> installed.txt
-	sudo apt-get install -y openjdk-7-jdk
-	echo "jdk7" >> installed.txt
+	sudo apt-get install -y openjdk-8-jdk
+	echo "jdk8" >> installed.txt
 	sudo apt-get install -y g++
 	echo "g++" >> installed.txt
 	sudo apt-get install -y indicator-multiload
@@ -51,8 +51,8 @@ vm:
 	echo "ubuntu-restricted-extras" >> installed.txt
 	sudo apt-get install -y oracle-java8-installer
 	echo "java8" >> installed.txt
-	sudo apt-get install -y openjdk-7-jdk
-	echo "jdk7" >> installed.txt
+	sudo apt-get install -y openjdk-8-jdk
+	echo "jdk8" >> installed.txt
 	sudo apt-get install -y g++
 	echo "g++" >> installed.txt
 	sudo apt-get install -y git
