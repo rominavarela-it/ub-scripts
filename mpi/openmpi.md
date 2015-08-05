@@ -53,6 +53,7 @@
     Write at the end of file:
     
     export PATH=/mirror/romina/openmpi/install/bin:$PATH
+    export LD_LIBRARY_PATH=/mirror/romina/openmpi/install/lib:$LD_LIBRARY_PATH
 
 ###Test installation
 
