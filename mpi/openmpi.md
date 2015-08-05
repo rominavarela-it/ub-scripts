@@ -1,4 +1,10 @@
-###Create a mirror folder that will have the same route in every node
+##Automathic Installation
+
+ > sudo apt-get install libopenmpi-dev openmpi-bin libhdf5-openmpi-dev
+
+##Manual Installation
+
+**1 - Create a mirror folder that will have the same route in every node**
 
 *In this example we will use romina username*
 
@@ -12,13 +18,13 @@
 
  > cd /mirror/romina/openmpi
 
-##Get openmpi
+**2 - Get openmpi**
 
 *Find the latest stable version: http://www.open-mpi.org/software/ompi*
 
  > wget www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.7.tar.gz
 
-##Install
+**3 - Install**
 
  * step 1 - unpack
 
@@ -55,7 +61,7 @@
     export PATH=/mirror/romina/openmpi/install/bin:$PATH
     export LD_LIBRARY_PATH=/mirror/romina/openmpi/install/lib:$LD_LIBRARY_PATH
 
-###Test installation
+**4 - Test installation**
 
  > which mpiexec
 
