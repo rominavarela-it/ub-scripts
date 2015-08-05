@@ -26,33 +26,33 @@
 
 **3 - Install**
 
- * step 1 - unpack
+ *unpack*
 
  > tar -xvf openmpi-*
 
- * step 2 - choose an installation directory
+ *choose an installation directory*
 
  > mkdir /mirror/romina/openmpi/install
 
- * step 3 - choose a build directory
+ *choose a build directory*
 
  > mkdir /mirror/romina/openmpi/build
 
- * step 4 - configure
+ *configure*
 
  > cd /mirror/romina/build
 
  > /mirror/romina/openmpi/openmpi-*/configure --prefix=/mirror/romina/openmpi/install
 
- * step 5 - build
+ *build*
 
  > make
 
- * step 6 - install
+ *install*
 
  > make install
 
- * step 7 - include to path
+ *include to path*
 
  > nano ~/.bashrc
 
