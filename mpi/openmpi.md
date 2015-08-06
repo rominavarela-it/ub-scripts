@@ -30,27 +30,19 @@
 
  > tar -xvf openmpi-*
 
- *choose an installation directory*
+ *choose an installation and build directory*
+ 
+ > cd openmpi-*
 
- > mkdir /mirror/romina/openmpi/install
+ > mkdir install
 
- *choose a build directory*
+ > mkdir build
 
- > mkdir /mirror/romina/openmpi/build
+ *configure, build and install*
 
- *configure*
+ > ../configure --prefix=/mirror/romina/openmpi/openmpi-*/install
 
- > cd /mirror/romina/build
-
- > /mirror/romina/openmpi/openmpi-*/configure --prefix=/mirror/romina/openmpi/install
-
- *build*
-
- > make
-
- *install*
-
- > make install
+ > make all install
 
  *include to path*
 
@@ -65,3 +57,6 @@
 
  > which mpiexec
 
+**5- Test node**
+
+ > ssh remote-server-name which orted
