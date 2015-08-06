@@ -30,15 +30,13 @@
 
  > tar -xvf openmpi-*
 
- *choose an installation and build directory*
+ *configure, build and install*
  
  > cd openmpi-*
 
  > mkdir install
 
  > mkdir build
-
- *configure, build and install*
 
  > ../configure --prefix=/mirror/romina/openmpi/openmpi-*/install
 
