@@ -33,8 +33,8 @@ all:
 	echo "git" >> installed.txt
 	sudo apt-get install -y ipython
 	echo "ipython" >> installed.txt
-	sudo apt-get install -y maven2
-	echo "maven2" >> installed.txt
+	sudo apt-get install -y maven
+	echo "maven3" >> installed.txt
 	sudo apt-get install -y kolourpaint4
 	echo "kolourpaint4" >> installed.txt
 	sudo apt-get install -y qbittorrent
