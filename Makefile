@@ -47,8 +47,6 @@ vm:
 	sudo apt-get -y update
 	sudo apt-get -y upgrade
 	#apps
-	sudo apt-get install -y ubuntu-restricted-extras
-	echo "ubuntu-restricted-extras" >> installed.txt
 	sudo apt-get install -y oracle-java8-installer
 	echo "java8" >> installed.txt
 	sudo apt-get install -y openjdk-8-jdk
@@ -57,7 +55,22 @@ vm:
 	echo "g++" >> installed.txt
 	sudo apt-get install -y git
 	echo "git" >> installed.txt
-	sudo apt-get install -y ipython
-	echo "ipython" >> installed.txt
 	sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 	echo "virtual box plugins" >> installed.txt
+	#unnecesary (about 200mb)
+	sudo apt-get purge -y brasero brasero-*
+	sudo apt-get purge -y rhythbox rhythbox-*
+	sudo apt-get purge -y speech-dispatcher
+	sudo apt-get purge -y totem totem-*
+	sudo apt-get purge -y toshset
+	sudo apt-get purge -y popularity-contest
+	sudo apt-get purge -y empathy empathy-*
+	sudo apt-get purge -y gnome-orca gnome-sudoku gnome-bluetooth
+	sudo apt-get purge -y simple-scan
+	sudo apt-get purge -y thunderbird thunderbird-*
+	sudo apt-get purge -y baobab
+	sudo apt-get purge -y bluez bluez-*
+	sudo apt-get purge -y brltty
+	sudo apt-get purge -y cheese cheese-*
+	sudo apt-get purge -y sphinx-voxforge-*
+	sudo apt-get purge -y yelp yelp-*
