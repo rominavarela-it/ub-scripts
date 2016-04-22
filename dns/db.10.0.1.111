@@ -1,0 +1,12 @@
+$TTL	24h
+1.0.10.in-addr.arpa.	IN	SOA	ns.romy.loc. root.romy.loc. (
+			      1		; Serial
+			     3h		; Refresh
+			    30m		; Retry
+			     7d		; Expire
+			     3h )	; Negative Cache TTL
+;
+1.0.10.in-addr.arpa.	IN	NS	10.0.1.111.
+111			IN	PTR	ns.romy.loc.
+111                     IN      PTR     www.romy.loc.
+

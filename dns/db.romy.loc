@@ -1,0 +1,14 @@
+$TTL	24h
+romy.loc.	IN	SOA	ns.romy.loc. root.romy.loc. (
+			      1		; Serial
+			     3h		; Refresh
+			    30m		; Retry
+			     7d		; Expire
+			     3h )	; Negative Cache TTL
+;
+romy.loc.	IN	NS	ns.romy.loc.
+
+
+romy.loc.	IN	A	10.0.1.111
+www		IN	A	10.0.1.111
+ns		IN	A	10.0.1.111
