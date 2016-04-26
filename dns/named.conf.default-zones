@@ -35,7 +35,7 @@ zone "romy.loc" {
         file "/etc/bind/db.romy.loc";
 };
 
-zone "10.0.1.111.in-addr.arpa" {
+zone "1.0.10.in-addr.arpa" {
         type master;
         file "/etc/bind/db.10.0.1.111";
 };

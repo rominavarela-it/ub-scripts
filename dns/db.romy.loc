@@ -12,3 +12,9 @@ romy.loc.	IN	NS	ns.romy.loc.
 romy.loc.	IN	A	10.0.1.111
 www		IN	A	10.0.1.111
 ns		IN	A	10.0.1.111
+
+;EMAIL
+smtp		IN	A	10.0.1.111
+pop3		IN	A	10.0.1.111
+imap		IN	A	10.0.1.111
+romy.loc.	IN	MX	10	smtp.romy.loc.

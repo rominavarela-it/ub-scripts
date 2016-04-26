@@ -6,7 +6,8 @@ $TTL	24h
 			     7d		; Expire
 			     3h )	; Negative Cache TTL
 ;
-1.0.10.in-addr.arpa.	IN	NS	10.0.1.111.
+1.0.10.in-addr.arpa.	IN	NS	ns.romy.loc.
 111			IN	PTR	ns.romy.loc.
-111                     IN      PTR     www.romy.loc.
 
+;EMAIL
+111			IN	PTR	smtp.romy.loc.
