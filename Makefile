@@ -59,7 +59,6 @@ vm:
 	echo "virtual box plugins" >> installed.txt
 	#unnecesary (about 200mb)
 	sudo apt-get purge -y brasero brasero-*
-	sudo apt-get purge -y rhythbox rhythbox-*
 	sudo apt-get purge -y speech-dispatcher
 	sudo apt-get purge -y totem totem-*
 	sudo apt-get purge -y toshset
@@ -74,3 +73,4 @@ vm:
 	sudo apt-get purge -y cheese cheese-*
 	sudo apt-get purge -y sphinx-voxforge-*
 	sudo apt-get purge -y yelp yelp-*
+	sudo apt autoremove
