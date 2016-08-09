@@ -74,3 +74,5 @@ vm:
 	sudo apt-get purge -y sphinx-voxforge-*
 	sudo apt-get purge -y yelp yelp-*
 	sudo apt autoremove
+	sudo apt-get remove unity-control-center
+	sudo apt-get install unity-control-center
